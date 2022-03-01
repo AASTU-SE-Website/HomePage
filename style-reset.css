@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../resources/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../resources/fonts/NunitoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../resources/fonts/Roboto-Regular.ttf");
+}
 :root {
   font-size: 16px;
 }
