@@ -97,64 +97,64 @@ select {
 .transparent {
   background-color: transparent;
 }
-.text-center {
+.textCenter {
   text-align: center;
 }
-.w-full {
+.wFull {
   width: 100%;
 }
-.p-0 {
+.p_0 {
   padding: 0;
 }
-.m-0 {
+.m_0 {
   margin: 0;
 }
-.shrink-0 {
+.shrink_0 {
   flex-shrink: 0;
 }
 .flex {
   display: flex;
   gap: var(--gap, 0.5rem);
 }
-.flex-col {
+.flexCol {
   flex-direction: column;
 }
-.flex-row {
+.flexRow {
   flex-direction: row;
 }
-.gap-1 {
+.gap_1 {
   --gap: 0.25rem;
 }
-.gap-2 {
+.gap_2 {
   --gap: 0.5rem;
 }
-.gap-3 {
+.gap_3 {
   --gap: 0.75rem;
 }
-.gap-4 {
+.gap_4 {
   --gap: 1rem;
 }
-.items-center {
+.itemsCenter {
   align-items: center;
 }
-.justify-center {
+.justifyCenter {
   justify-content: center;
 }
-.justify-between {
+.justifyBetween {
   justify-content: space-between;
 }
-.overflow-hidden {
+.overflowHidden {
   overflow: hidden;
 }
-.bg-white {
+.bgWhite {
   background-color: #fff;
 }
-.text-white {
+.textWhite {
   color: #fff;
 }
-.text-primary {
+.textPrimary {
   color: var(--primary-color);
 }
-.text-secondary {
+.textSecondary {
   color: var(--secondary-color);
 }
