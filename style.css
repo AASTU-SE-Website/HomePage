@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../resources/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../resources/fonts/NunitoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../resources/fonts/Roboto-Regular.ttf");
+}
 :root {
   --primaryColor: rgb(47, 140, 236);
   --headerBg: #1a1a1a;
@@ -6,6 +18,8 @@ body {
   font-family: "Montserrat";
 }
 header {
+  min-width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +46,8 @@ header {
   position: relative;
   padding-block: 2rem;
   padding-inline: min(2rem, 2vw);
+  font-weight: 600;
+  transition: 200ms ease-in-out;
   /* margin-right: 0.5rem; */
 }
 
@@ -39,12 +55,15 @@ header {
   content: "";
   position: absolute;
   width: 0;
-  height: 4px;
+  height: 5px;
   background-color: var(--primaryColor);
   border-radius: 0.1rem;
   bottom: 0;
   left: 50%;
   transition: 200ms ease-in-out;
+}
+.primaryNavItem a:hover {
+  color: var(--primaryColor);
 }
 .primaryNavItem a:hover::before {
   width: 100%;
@@ -129,5 +148,51 @@ header {
   }
   header {
     padding-block: 1rem;
+  }
+  .primaryNav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10000;
+    visibility: hidden;
+    min-height: 100vh;
+    width: max(12rem, 30vw);
+    right: 0;
+    top: 74px;
+    transform: translateX(100%);
+    background-color: var(--headerBg);
+    /* transition: 200ms ease-in-out; */
+    animation: fadeIn 200ms ease forwards;
+  }
+  .primaryNav.open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  @keyframes fadeIn {
+    from {
+      display: none;
+      transform: translateX(100);
+    }
+    1% {
+      display: block;
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .primaryNav ul {
+    width: 90%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .primaryNavItem a {
+    min-width: 100%;
+    padding-block: 1rem;
+  }
+  .primaryNavItem:last-of-type {
+    margin-bottom: 2rem;
+  }
+  .headerSignUp {
+    margin-inline: 1rem;
   }
 }
