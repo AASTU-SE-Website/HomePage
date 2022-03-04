@@ -9,6 +9,11 @@ body {
     font-family: "Montserrat";
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     min-width: 100vw;
     position: fixed;
@@ -192,17 +197,21 @@ header {
 
 .feature-text {
     display: grid;
-    grid-template-rows: 80px 80px;
-}
-
-.feature-text {
-    display: inline;
+    margin-top: 5%;
+    grid-template-rows: 20px 80px;
 }
 
 .feature-img img {
     width: 3.5rem;
     aspect-ratio: 1;
     object-fit: contain;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 1024px) {
