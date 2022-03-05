@@ -1,0 +1,602 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+/*--------------------------------------------------------*/
+/*                root taken from wesag                   */
+/*--------------------------------------------------------*/
+
+
+
+:root {
+    --primaryColor: rgb(47, 140, 236);
+    --greyColor: #f1f1f1;
+    --blackColor: #424242;
+    --headerBg: #1a1a1a;
+}
+
+
+
+body {
+   font-family: 'Nunito', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------*/
+/*                 reusable -components                   */
+/*--------------------------------------------------------*/
+
+
+
+
+.btn {
+    margin-top: 1rem;
+   margin-bottom: 1rem;
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background: var(--primaryColor);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: all 0.1s;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+}
+
+.btn:hover{
+    background: var(--headerBg);
+    color:#fff;  
+    font-weight: bolder;
+   
+          
+}
+
+
+.title {
+
+  font-size: 2rem;
+ text-align: center;
+  padding: 1.2rem 0;
+margin-bottom: 2rem;
+  color: var(--headerBg);
+}
+
+
+
+section{
+    padding: 2.5rem 9%;
+
+}
+
+
+
+
+/*--------------------------------------------------------*/
+/*                  courses                               */
+/*--------------------------------------------------------*/
+
+
+
+
+.courses
+{
+      padding: 2.5rem 9%;
+}
+
+.courses .box-container {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+}
+
+.courses .box-container .box {
+
+  background: var(--greyColor);
+
+}
+
+.courses .box-container .box:hover .image img {
+          transform: scale(1.2);
+
+}
+
+.courses .box-container .box .image {
+  height: 17rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.courses .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 200ms ease-in-out;
+}
+
+.courses .box-container .box .content {
+  padding: 1rem 2rem;
+
+ 
+}
+
+
+.courses .box-container .box .content .content-height
+
+{
+
+    height: 4.5rem;
+}
+
+
+
+.courses .box-container .box .content h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--headerBg);
+
+}
+
+.courses .box-container .box .content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  
+   
+    
+}
+
+.courses .box-container .box .content h4 {
+
+  padding: 1rem ;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--headerBg);
+  border-bottom: 0.1rem solid var(--blackColor);
+  border-l
+}
+
+.courses .box-container .box .content h4:last-of-type {
+margin-bottom: 2rem;
+
+}
+
+
+.courses .box-container .box .underline
+{
+
+     border-bottom: 0.3rem solid var(--blackColor);
+     line-height: 1rem;
+}
+
+
+.courses .box-container .box .content .btn{ 
+
+width: 80%;
+margin-left: 10%;
+}
+
+.View-all
+{
+   margin-top: 3rem;
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+
+}
+
+.View-all a:active,
+.View-all a:hover
+{
+    color: var(--blackColor);
+   
+}
+
+
+
+
+
+
+/*--------------------------------------------------------*/
+/*                  key figures                           */
+/*--------------------------------------------------------*/
+
+
+
+
+
+.key_figures
+{
+    background: var(--greyColor);
+}
+
+.key_figures .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1rem;
+}
+
+.key_figures .box-container .box{
+    text-align: center;
+    background:#fff;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding:1rem;
+}
+
+.key_figures .box-container .box img{
+   
+display: inline-block;
+    height: 8rem;
+    border:var(--primary-color);
+
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.key_figures .box-container .box h3{
+    color:var(--headerBg);
+    font-size: 1.5rem;
+}
+
+.key_figures .box-container .box span{
+    color:var(--blackColor);
+    font-size: 1.5rem;
+}
+
+.key_figures .box-container .box .share{
+    padding-top: 2rem;
+}
+
+.key_figures .box-container .box .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3.5rem;
+    font-size: 2rem;
+    color:var(--secondary-color);
+    border-radius: .5rem;
+    border:var(--border);
+    margin:.3rem;
+}
+
+.key_figures .box-container .box .share a:hover{
+    background:var(--primary-color);
+    color:#fff;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+/*--------------------------------------------------------*/
+/*                   about us 2                           */
+/*--------------------------------------------------------*/
+
+
+
+
+.about2 {
+
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about2 .image {
+ 
+          flex: 1 1 32rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  display: inline-block;
+}
+
+.about2 .image img {
+
+display: inline-block;
+     box-shadow: 4rem 4rem 0 var(--greyColor);
+
+}
+
+.about2 .content {
+  
+          flex: 1 1 32rem;
+          text-align: center;
+}
+
+.about2 .content h3 {
+    text-align: center;
+  font-size: 2rem;
+  color: var(--headerBg);
+  margin-bottom: 1.5rem;
+}
+
+.about2 .content p {
+  font-size: 1rem;
+  color: var(--blackColor);
+  padding: 0rem 0;
+  line-height: 1.5;
+}
+
+
+
+
+/*--------------------------------------------------------*/
+/*                      contct us                         */
+/*--------------------------------------------------------*/
+
+
+
+
+.contact-bg {
+  height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(resources/event1.png);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-bg h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.contact-bg h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0;
+  letter-spacing: 4px;
+}
+
+.line div{
+  margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+  height: 3px;
+  width: 70px;
+  background: var(--primaryColor);
+  border-radius: 5px;
+}
+
+.line{
+  display: flex;
+  align-items: center;
+}
+.line div:nth-child(2){
+  width: 10px;
+  height:10px;
+  background: var(--primaryColor);
+  border-radius: 50%;
+}
+.text {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.contact-bg .text {
+  margin: 1.6rem 0;
+}
+.contact-body{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-info{
+  margin: 2rem 0;
+  text-align: center;
+  padding: 2rem 0;
+}
+.contact-info span{
+  display: block;
+}
+.contact-info div{
+  margin: 0.8rem 0;
+  padding: 1rem;  
+}
+.contact-info span .fas{
+  font-size: 2rem;
+  padding-bottom: 0.9rem;
+  color: var(--primaryColor);
+}
+.contact-info div span:nth-child(2){
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.contact-info .text{
+  padding-top: 0.4rem;
+}
+.contact-form{
+  padding: 2rem 0;
+  border-top: 1px solid var(--primaryColor);
+}
+contact-form form{
+  padding-bottom: 1rem;
+}
+.form-control{
+  width: 100%;
+  border: 0.1rem solid var(--primaryColor);
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 0.6rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  outline: 0;
+}
+.form-control:focus{
+  box-shadow: 0 0 6px -3px; rgba(48, 48, 48,1);
+}
+
+.contact-form form div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.6rem;
+}
+.send-btn{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--primaryColor);
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: all o.4s ease;
+}
+.send-btn:hover{
+   background: var(--blackColor);
+}
+.contact-form > div img{
+  width: 85%;
+}
+.contact-form > div{
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-footer {
+   margin: 0 auto;
+  padding: 2rem 0;
+  background: var(--headerBg);
+}
+.contact-footer h3{
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+}
+.social-links a{
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+  transition: all 0.4s ease;
+}
+.social-links a:hover{
+  color:var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+/* media queries */
+
+@media screen and (min-width: 786px){
+  .contact-bg .text{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px){
+  .contact-bg .text{
+    width: 50%;
+  }
+  .contact-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px){
+    .contact-info{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+
+/*--------------------------------------------------------*/
+/*               events                                   */
+/*--------------------------------------------------------*/
+
+
+.events .content
+{
+    text-align: center;
+}
+.events .slide {
+  border: 0rem solid #10221b;
+}
+
+
+.events .slide .image {
+  position: relative;
+  overflow: hidden;
+  height: 15rem;
+  width: 100%;
+}
+
+.events .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+
+.events .slide .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.events .slide .content h3 {
+  font-size: 1.5rem;
+  color: var(--headerBg);
+}
+
+.events .slide .content .price {
+  padding: 1rem 0;
+  padding-top: .5rem;
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: #fff;
+}
