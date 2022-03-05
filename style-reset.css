@@ -223,3 +223,7 @@ select {
 .textSecondary {
     color: var(--secondary-color);
 }
+
+.transition {
+    transition: 400ms ease;
+}
