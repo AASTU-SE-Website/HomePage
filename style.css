@@ -295,7 +295,11 @@ header {
 .course-card a {} */
 
 .courses {
-    padding: 2.5rem 9%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-block: 2rem;
 }
 
 .courses .box-container {
@@ -304,7 +308,7 @@ header {
     gap: 1.5rem;
 }
 
-.courses .box-container .box {
+.box {
     background: var(--greyColor);
 }
 
@@ -369,7 +373,7 @@ header {
 }
 
 .View-all {
-    margin-top: 3rem;
+    margin-block: 3rem;
     color: var(--primaryColor);
     text-align: center;
     font-size: 1.3rem;
@@ -379,6 +383,10 @@ header {
 .View-all a:active,
 .View-all a:hover {
     color: var(--blackColor);
+}
+
+.content button {
+    padding: 0.8rem 1.6rem;
 }
 
 
