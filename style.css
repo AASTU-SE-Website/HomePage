@@ -4,6 +4,37 @@
     --blackColor: #424242;
     --headerBg: #1a1a1a;
 }
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translatex(-10.25rem);
+  }
+
+  50% {
+    transform: translateX(25rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes movetotop {
+  0% {
+    opacity: 0;
+    transform: translatey(1.25rem);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(-1.25rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
 body {
     font-family: "Montserrat";
@@ -26,7 +57,7 @@ header {
 }
 
 .transparent {
-    background-color: transparent;
+    background-color: var(--headerBg);
 }
 
 .nav-colored {
@@ -39,7 +70,7 @@ header {
 }
 
 .logo img:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.5);
 }
 
 .primaryNav ul {
@@ -175,7 +206,6 @@ header {
     align-items: center;
     gap: 2rem;
 }
-
 .opacity {
     background: black;
     opacity: 0.8;
@@ -191,10 +221,14 @@ header {
 .opacity h1 {
     font-size: 4rem;
     color: var(--greyColor);
+    animation-name: movetotop;
+    animation-duration: 3s;
 }
 
 .opacity p {
     font-size: 1.3rem;
+    animation-name: moveinleft;
+    animation-duration: 3s;
 }
 
 .opacity button {
@@ -294,6 +328,47 @@ header {
 
 .course-card a {} */
 
+/* Key Figures Section Style */
+
+.keyfigures
+{
+    display: flex;
+    height: 30vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 2rem;
+    background-color: var(--greyColor);
+
+}
+.imagesOfKeyFigures
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 10rem 6rem;
+    position: relative;
+    width: 25vw;
+}
+.user
+{
+
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.keyfigures .imagesOfKeyFigures h3
+{
+    text-align: center;
+    margin-top: 10px;
+}
+.aboutKeyFigures
+{
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
 .courses {
     display: flex;
     flex-direction: row;
@@ -310,10 +385,22 @@ header {
 
 .box {
     background: var(--greyColor);
+    transition: all ease;
+}
+.box-container .box:hover
+{
+    transform: scale(1.1);
+    z-index: 20;
+    
+}
+
+.box-container:hover .box:not(:hover)
+{
+    transform: scale(0.85);
 }
 
 .courses .box-container .box:hover .image img {
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .courses .box-container .box .image {
@@ -473,4 +560,84 @@ header {
     .headerSignUp {
         margin-inline: 1rem;
     }
+    iframe
+    {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+}
+@media (max-width:1357px )
+{
+   .imagesOfKeyFigures
+{
+    padding: 7rem 6rem;
+}
+ .keyfigures .imagesOfKeyFigures h4
+{
+    font-size: 15px;
+}   
+}
+
+@media (max-width:1320px )
+{
+       .imagesOfKeyFigures
+{
+    padding: 7rem 6rem;
+}
+   .keyfigures .imagesOfKeyFigures h3
+{
+    font-size: 15px;
+}  
+ .keyfigures .imagesOfKeyFigures h4
+{
+    font-size: 13px;
+}
+}
+@media (max-width:1247px )
+{
+   .imagesOfKeyFigures
+{
+    padding: 7rem 6rem;
+}
+ .keyfigures .aboutKeyFigures
+{
+    width: 10vw;
+}
+}
+@media (max-width:1197px )
+{
+   .imagesOfKeyFigures
+{
+    padding: 4rem 6rem;
+}
+ .keyfigures .aboutKeyFigures
+{
+    width: 5vw;
+}
+.user
+{
+
+    height: 5rem;
+    width: 5rem;
+
+}
+}
+@media (max-width:1106px )
+{
+   .imagesOfKeyFigures
+{
+    padding: 2rem 6rem;
+}
+ .keyfigures .aboutKeyFigures
+{
+    width: 2vw;
+}
+}
+@media (max-width:1020px)
+{
+ .keyfigures .imagesOfKeyFigures h4
+{
+    visibility: none;
+    color: transparent;
+}
 }
