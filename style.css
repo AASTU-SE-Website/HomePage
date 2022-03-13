@@ -230,12 +230,14 @@ header {
   color: var(--greyColor);
   animation-name: movetotop;
   animation-duration: 3s;
+  text-align: center;
 }
 
 .opacity p {
   font-size: 1.3rem;
   animation-name: moveinleft;
   animation-duration: 3s;
+  text-align: center;
 }
 
 .opacity button {
@@ -247,7 +249,7 @@ header {
 /* Mission, Vision and Values Section */
 
 .values {
-  height: 35rem;
+  min-height: 35rem;
   padding-inline: min(4vw, 10rem);
 }
 .vi-pic {
@@ -351,7 +353,7 @@ header {
 
 .keyfigures {
   display: flex;
-  height: 40vh;
+  min-height: 40vh;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -601,6 +603,22 @@ header {
 @media screen and (max-width: 650px) {
   .feature-items {
     flex-direction: column;
+  }
+
+  .values {
+    flex-direction: column;
+    padding-block: 3rem;
+    gap: 2rem;
+  }
+  .values hr {
+    display: none;
+  }
+  .dif-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .keyfigures {
+    padding-block: 3rem;
   }
 }
 
