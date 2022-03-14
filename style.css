@@ -1,4 +1,4 @@
-:root {
+        :root {
     --primaryColor: rgb(47, 140, 236);
     --greyColor: #f1f1f1;
     --blackColor: #424242;
@@ -694,31 +694,44 @@ header {
         max-width: 100vw;
         max-height: 100vh;
     }
-}
-
-@media screen and (max-width: 650px) {
-    .feature-items {
+    .aboutSection {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .values {
-        flex-direction: column;
-        padding-block: 3rem;
-        gap: 2rem;
+    .feature-text * {
+        text-align: center;
     }
-    .values hr {
-        display: none;
-    }
-    .dif-list {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .keyfigures {
-        padding-block: 3rem;
-    }
-}
-
-
-/* @media (max-width: 1357px) {
+    @media screen and (max-width: 650px) {
+        .feature-items {
+            flex-direction: column;
+        }
+        .values {
+            flex-direction: column;
+            padding-block: 3rem;
+            gap: 2rem;
+        }
+        .values hr {
+            display: none;
+        }
+        .dif-list {
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .keyfigures {
+            padding-block: 3rem;
+        }
+        .aboutSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .feature-text * {
+            text-align: center;
+        }
+        /* @media (max-width: 1357px) {
   .imagesOfKeyFigures {
     padding: 7rem 6rem;
   }
