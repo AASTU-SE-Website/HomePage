@@ -8,8 +8,8 @@ const myNav = document.querySelector("header");
 
 window.onscroll = function() {
     if (
-        document.body.scrollTop >= window.innerHeight ||
-        document.documentElement.scrollTop >= window.innerHeight
+        document.body.scrollTop >= 200 ||
+        document.documentElement.scrollTop >= 200
     ) {
         myNav.classList.add("nav-colored");
         myNav.classList.add("transition");
